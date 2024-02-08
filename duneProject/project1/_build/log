@@ -1,0 +1,30 @@
+# dune exec bin/main.exe
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /home/prince/.cache/dune/db
+# Workspace root:
+# /home/prince/Documents/coding&developement/ocaml/duneProject/project1
+# Auto-detected concurrency: 4
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/home/prince/Documents/coding&developement/ocaml/duneProject/project1/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /home/prince/.opam/pcccs301/bin/ocamlc.opt -config > /tmp/dune_0643a7_output
+$ (cd _build/default && /home/prince/.opam/pcccs301/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.project1.objs/byte -no-alias-deps -opaque -o lib/.project1.objs/byte/project1.cmo -c -impl lib/project1.ml-gen)
+$ (cd _build/default && /home/prince/.opam/pcccs301/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I lib/.project1.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
+$ (cd _build/default && /home/prince/.opam/pcccs301/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.project1.objs/byte -I lib/.project1.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.project1.objs/native/project1.cmx -c -impl lib/project1.ml-gen)
+$ (cd _build/default && /home/prince/.opam/pcccs301/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I lib/.project1.objs/byte -I lib/.project1.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
+$ (cd _build/default && /home/prince/.opam/pcccs301/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/project1.cmxa lib/.project1.objs/native/project1.cmx)
+$ (cd _build/default && /home/prince/.opam/pcccs301/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe lib/project1.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
